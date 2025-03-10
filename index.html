@@ -10,7 +10,7 @@
     />
     <meta name="keywords" content="criptomonedas, seguridad, crypto" />
     <meta name="author" content="KR3RULIE" />
-    <link rel="shortcut icon" href="./img/monedas.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/monedas.jpeg" type="image/x-icon" />
     <title>CryptoFin</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -390,7 +390,7 @@
           </div>
           <div class="modal-body">
             <p>Completa los siguientes pasos para crear tu cuenta:</p>
-            <form>
+            <form id="formCrearCuenta">
               <div class="mb-3">
                 <label for="nombre" class="form-label"
                   >Nombre y Apellido *</label
@@ -428,6 +428,8 @@
                   class="form-control"
                   id="inputPassword1"
                   placeholder="**********"
+                  minlength="3"
+                  maxlength="25"
                   required
                 />
               </div>
@@ -440,13 +442,15 @@
                   class="form-control"
                   id="inputPassword2"
                   placeholder="**********"
+                  minlength="3"
+                  maxlength="25"
                   required
                 />
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" form="formCrearCuenta" class="btn btn-primary">Enviar</button>
           </div>
         </div>
       </div>
